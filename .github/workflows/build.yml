@@ -39,9 +39,9 @@ jobs:
 
     steps:
       - name: Download Windows artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
-          name: xuejimao-publish-windows
+          name: scenedetect-windows
           path: ./dist
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
