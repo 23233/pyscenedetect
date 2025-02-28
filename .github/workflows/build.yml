@@ -28,9 +28,9 @@ jobs:
           pyinstaller main.spec
 
       - name: Archive the build
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: xuejimao-publish-windows
+          name: scenedetect-windows
           path: dist/scenedetect.exe
 
   release:
